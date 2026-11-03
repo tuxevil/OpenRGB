@@ -27,6 +27,7 @@ public:
     void        DeviceUpdateSingleLED(int led);
 
     void        DeviceUpdateMode();
+    void        DeviceUpdateZoneMode(int zone) override;
 
 private:
     AMDWraithPrismController*   controller;
