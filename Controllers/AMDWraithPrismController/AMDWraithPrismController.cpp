@@ -128,6 +128,8 @@ void AMDWraithPrismController::SetFanColor(unsigned char red, unsigned char gree
         green,
         blue
     );
+
+    SendApplyCommand();
 }
 
 void AMDWraithPrismController::SetLogoMode(unsigned char mode, unsigned char speed, unsigned char brightness, bool random_color)
@@ -152,6 +154,8 @@ void AMDWraithPrismController::SetLogoColor(unsigned char red, unsigned char gre
         green,
         blue
     );
+
+    SendApplyCommand();
 }
 
 void AMDWraithPrismController::SetRingMode(unsigned char mode, unsigned char speed, unsigned char brightness, bool direction, bool random_color)
